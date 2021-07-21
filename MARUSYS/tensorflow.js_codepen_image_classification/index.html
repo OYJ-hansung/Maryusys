@@ -1,0 +1,38 @@
+<!-- 
+https://js.tensorflow.org/tutorials/webcam-transfer-learning.html
+-->
+<html>
+
+ <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/tensorflow/0.11.4/tf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.2.0/rxjs.umd.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+ </head>
+<body>
+<div id="no-webcam">
+  No webcam found.
+  <br> To use this demo, use a device with a webcam.
+</div>
+
+<button class="train">Train Model</button>
+<button class="predict">Predict</button>
+
+<div class="joystick-container">
+  <div class="joystick">
+
+    <div class="webcam-box">
+      <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+    </div>
+
+    <button class="up">Up</button>
+    <button class="left">Left</button>
+    <button class="down">Down</button>
+    <button class="right">Right</button>
+  </div>
+</div>
+
+<div class="predicted">🖐</div>
+<script src="index.js"></script>
+<body>
+</html>
